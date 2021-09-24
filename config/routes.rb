@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   get '/modify/:post_id' => 'home#modify'
   post '/update/:post_id' => 'home#update'
-  # get '/delete/:id' => 'home#delete'
+  get '/delete/:post_id' => 'home#delete'
 end

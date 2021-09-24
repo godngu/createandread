@@ -27,8 +27,8 @@ class HomeController < ApplicationController
         redirect_to '/index'
     end
 
-    # def delete
-    #     post = Post.destroy(params[:id])
-    #     redirect_to :back
-    # end
+    def delete
+        post = Post.destroy(params[:post_id])
+        redirect_back(fallback_location: '/')
+    end
 end
